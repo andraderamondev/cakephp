@@ -418,7 +418,7 @@ class Socket
 
             return true;
         }
-        /** @psalm-suppress InvalidPropertyAssignmentValue */
+
         $this->connected = !fclose($this->connection);
 
         if (!$this->connected) {
